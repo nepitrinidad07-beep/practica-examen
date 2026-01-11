@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog de Trinidad Nepi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>El Blog de Trinidad Nepi</h1>
+        <p>Proyectos y Noticias de Clase</p>
+    </header>
+
+    <div class="contenedor">
+        {% for post in noticias %}
+        <article>
+            <h2>{{ post['TITULO'] }}</h2>
+            
+            <div class="datos-post">
+                Publicado por: <strong>{{ post['AUTOR'] }}</strong> | 
+                Fecha: {{ post['FECHA'] }}
+            </div>
+
+            <p>{{ post['CONTENIDO'] }}</p>
+
+            <div class="imagen-link">
+                <strong>Referencia de imagen:</strong> {{ post['IMAGEN'] }}
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Trinidad Nepi. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

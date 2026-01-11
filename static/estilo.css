@@ -1,0 +1,53 @@
+/* Configuración general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de las noticias */
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Diseño de cada artículo */
+article {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+article h2 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+.datos-post {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.imagen-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 0.8rem;
+    color: #3498db;
+}
